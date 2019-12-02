@@ -2,6 +2,7 @@ import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { EstadosRoutingModule } from './estados.routing.module';
 import { EstadosComponent } from './estados.component';
+import { TableModule } from 'primeng/table';
 
 
 
@@ -9,7 +10,9 @@ import { EstadosComponent } from './estados.component';
   declarations: [EstadosComponent],
   imports: [
     CommonModule,
-    EstadosRoutingModule
+    EstadosRoutingModule,
+    TableModule
+
   ]
 })
 export class EstadosModule { }

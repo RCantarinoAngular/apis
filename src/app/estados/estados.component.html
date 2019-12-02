@@ -1,24 +1,17 @@
-
-
-<br />
-
-<table class="table">
-    <thead>
+<p-table [value]="estados" sortMode="multiple">
+    <ng-template pTemplate="header">
         <tr>
             <th>Id</th>
             <th>Sigla</th>
             <th>Nome</th>
-        </tr>
-    </thead>
-    <tbody>
-        <tr *ngFor="let item of estados">
-            <td>{{item.id}}</td>
-            <td>{{item.sigla}}</td>
-            <td>{{item.nome}}</td>
-        </tr>
-    </tbody>
-</table>
 
-<button [routerLink]="[ 'add']">
-    Add
-</button>
+        </tr>
+    </ng-template>
+    <ng-template pTemplate="body" let-estado>
+        <tr>
+            <td>{{estado.id}}</td>
+            <td>{{estado.sigla}}</td>
+            <td>{{estado.nome}}</td>
+        </tr>
+    </ng-template>
+</p-table>
