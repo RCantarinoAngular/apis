@@ -2,9 +2,6 @@ import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { Routes, RouterModule } from '@angular/router'
 
-
-
-
 const routes: Routes =
   [
     {
@@ -14,6 +11,12 @@ const routes: Routes =
     {
       path: 'usuario', 
       loadChildren: './usuario/usuario.module#UsuarioModule'
+    
+    },
+
+    {
+      path: 'estados', 
+      loadChildren: './estados/estados.module#EstadosModule'
     
     },
     {

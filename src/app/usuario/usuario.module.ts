@@ -8,7 +8,7 @@ import { FormsModule } from '@angular/forms'
 
 
 @NgModule({
-  declarations: [UsuarioComponent , UsuarioCadastroComponent],
+  declarations: [UsuarioComponent, UsuarioCadastroComponent],
   imports: [
     CommonModule,
     UsuarioRoutingModule,
