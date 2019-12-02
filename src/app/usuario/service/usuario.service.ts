@@ -18,6 +18,22 @@ export class UsuarioService {
 
   }
 
+  public getUsuarios(): Array<Usuario> {
+    return [{
+        nome: 'usuario 1',
+        email: 'usr1@gmail.com'
+      },
+      {
+        nome: 'usuario 2',
+        email: 'usr2@gmail.com'
+      },
+      {
+        nome: 'usuario 3',
+        email: 'usr3@gmail.com'
+      }]
+
+}
+
 
 
 
