@@ -13,8 +13,26 @@ export class UsuarioComponent implements OnInit {
   constructor(private usuarioService: UsuarioService) { }
 
   ngOnInit() {
-    this.usuario = this.usuarioService.getUsuario()
-    this.usuarios = this.usuarioService.getUsuarios()
+    this.getUsuarios();
   }
+
+  public salvar() {
+    this.usuarioService.salvar(this.usuario).subscribe(
+      result => {
+        alert('deu good')
+
+      },
+      error => alert('deu brad')
+    )
+  }
+
+  public getUsuarios() {
+    this.usuarioService.getUsuarios().subscribe(result => this.usuarios = result,
+      error => alert('deu brad'))
+  }
+}
+
+
+
 
 }
